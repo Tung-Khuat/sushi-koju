@@ -1,0 +1,52 @@
+// @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+//   html {
+//     transform: rotate(-90deg);
+//     transform-origin: left top;
+//     width: 100vh;
+//     overflow-x: hidden;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//   }
+// }
+
+@mixin default-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin text-wrap-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin base-sushi-box-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  font-size: 1.25rem;
+  background-color: #141414;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+@mixin standard-clickable-icon {
+  cursor: pointer;
+  padding: 5px;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+
+@mixin sushi-box-size {
+  width: 270px;
+}

@@ -1,0 +1,517 @@
+.add-to-cart-button {
+  max-height: 35px;
+  margin-left: 10px !important;
+  align-items: center;
+  display: inline-block;
+  @media screen and (max-width: $screen-medium) {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1rem !important;
+    margin-left: 0 !important;
+    display: block;
+  }
+}
+
+.add-to-cart-group-container {
+  width: 100%;
+  margin: 20px 0;
+  display:flex;
+  @media screen and (max-width: $screen-medium) {
+    display: block;
+  }
+}
+
+.container {
+  @media screen and (max-width: $screen-small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.cropped {
+  width:  120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.platter-list-container {
+  @include default-container;
+  margin: 20px auto;
+}
+
+.contain-cropped {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+ }
+
+.cover-cropped {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.dark-filter {
+   background-color: rgba(2, 27, 35, 0.79);
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
+   color: #fff;
+}
+
+.navigation-panel {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.ingredience-container {
+  align-content: stretch;
+  flex-wrap: nowrap !important;
+}
+
+.ingredience-item {
+  place-self: center;
+  input {
+    border: none !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.sushi-banner-background {
+  width: 100%;
+  height: 140%;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  opacity: 0.4;
+  z-index: -100;
+}
+
+.sushi-banner-container {
+  width: 100%;
+  height: 80vh;
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  color: #fff;
+  h2 {
+    color: #fff;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.sushi-banner-content {
+  width: 70%;
+  margin: 20px auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.sushi-box {
+  @include sushi-box-size;
+  position: relative;
+  border-radius: 7px;
+  margin: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.09);
+  &:hover {
+    transform: scale(1.009);
+  }
+}
+
+.sushi-box-info {
+  @include base-sushi-box-title;
+  opacity: 0.5;
+  .sushi-box-title {
+    @include text-wrap-ellipsis;
+  }
+}
+
+.sushi-box-detailed-info {
+  @include base-sushi-box-title;
+  opacity: 1;
+}
+
+.sushi-box-title {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.sushi-box-delete-icon {
+  position: absolute;
+  @include standard-clickable-icon;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+
+.sushi-edit-button {
+  position: absolute;
+  @include standard-clickable-icon;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+}
+
+.platter-full-info-container {
+  width: 85vw;
+  margin: 20px auto;
+  // box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  input {
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    background: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: $screen-medium) {
+    width: 90vw;
+  }
+  @media screen and (max-width: $screen-small) {
+    width: 100%;
+    padding: 2rem;
+    overflow: auto;
+  }
+}
+
+.sushi-info-cirlce-image-container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  font-size: 1.25em;
+  align-items: center;
+  flex-shrink: 0;
+  user-select: none;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+  }
+}
+
+.sushi-info-title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.sushi-instructions {
+  padding: 35px;
+  .ingredience-item {
+    background-color: #fff0f09c;
+    margin: 2px;
+    border-radius: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    &:hover {
+      overflow: scroll;
+      text-overflow: clip;
+    }
+  }
+  .MuiGrid-container {
+    margin-bottom: 3px;
+  }
+}
+
+.sushi-info-image {
+  width: 325px;
+}
+
+.sushi-layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vh;
+  justify-content: center;
+}
+
+.sushi-tag {
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.sushi-thumbnail {
+  max-width: 250px;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.sushi-menu-container {
+  width: 70%;
+  margin: 100px auto;
+}
+
+.tags-container {
+  input {
+    border: none;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div {
+    margin: 3px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.toggle-fav-icon {
+  @include standard-clickable-icon;
+  position: absolute;
+  color: white;
+  margin: 3px;
+}
+
+.input-number-group {
+  display: flex;
+}
+
+.plus-minus-number-container {
+  display: flex;
+  input {
+    width: 100px;
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid #a9a9a9;
+    background: none;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+  }
+  .unit-input{
+    width: 50px !important;
+    border-left: 0;
+  }
+  .left-button{
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .right-button{
+    border: 1px solid #a9a9a9;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+  @media screen and (max-width: $screen-medium) {
+    width: 100%;
+    margin: 0 auto;
+    input {
+      font-size: 2rem;
+      width: 100%;
+    };
+    .left-button, .right-button {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .unit-input {
+      width: 0 !important;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+.platter-card {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  @media screen and (max-width: $screen-small) {
+    width: 100%;
+  }
+}
+
+.platter-info {
+  min-width: 300px;
+  @media screen and (max-width: $screen-small) {
+    width: 100%;
+  }
+}
+
+.sushiBorderTableTitle{
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  @media screen and (max-width: $screen-medium) {
+    display: none;
+  }
+}
+
+.container {
+  max-width: none;
+}
+
+.cart-receipt-card {
+  width: 80%;
+  margin: 0 auto;
+  position: sticky;
+  float: none;
+  top: 10%;
+  @media screen and (max-width: 1380px) {
+    float: right;
+    margin: 0;
+  }
+  @media screen and (max-width: $screen-large) {
+    width: 100%;
+    position: inherit;
+    top: 0;
+  }
+}
+
+.remove-icon-container {
+  cursor: pointer;
+  padding: 0 20px;
+  z-index: 10;
+  text-align: center;
+  @media screen and (max-width: $screen-medium) {
+    width: 100%;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px 0;
+  }
+}
+
+.receipt-header {
+  color: #fff;
+  background: #337ab7;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+.user-email-phone-input-container {
+  display:flex;
+  justify-content: space-between;
+  @media screen and (max-width: $screen-small) {
+    display: block;
+    div {
+      width: 100%;
+    }
+  }
+}
+
+.order-receipt-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  button {
+    width: 30%;
+    margin: 5px;
+    padding: 10px 0;
+  }
+  div {
+    width: 30%;
+    margin: 5px
+  }
+  .order-receipt-modal-button{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+  @media screen and (max-width: $screen-medium) {
+    display: block;
+    padding: 0 10px 0 10px;
+    button {
+      width: 100%;
+      padding: 10px 0 10px;
+      margin: 0 auto;
+    }
+    div {
+      width: 100%;
+      margin: 10px auto;
+    }
+  }
+}
+
+.order-sender-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c3c3c3;
+  overflow: auto;
+  @media screen and (max-width: $screen-medium) {
+    display: block;
+  }
+}
+
+.receipt-card-borders-and-shadow {
+  display: inline-block;
+  background-color: #fff;
+  color: inherit;
+  width: 100%;
+  border: 1px solid #337ab7;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.09);
+  margin-bottom: 15px;
+}
+
+.completed-order-color-theme {
+  border-color: #4e8640;
+  header {
+    background-color: #4e8640;
+    color: #fff;
+  }
+}
+
+.passed-order-color-theme {
+  border-color: #848484;
+  header {
+    background-color: #848484;
+    color: #fff;
+  }
+}
+
+.canceled-order-color-theme {
+  border-color: #dc3545;
+  header {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
+
+.login-input-field {
+  width: 500px;
+  margin: 0 auto;
+  @media screen and (max-width: $screen-small) {
+    width: 90%;
+  }
+}
