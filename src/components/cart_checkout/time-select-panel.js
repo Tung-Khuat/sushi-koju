@@ -1,17 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
-import DeleteIcon from '@material-ui/icons/Delete';
-import MomentUtils from '@date-io/moment'; import {
+import MomentUtils from '@date-io/moment'; 
+import {
   MuiPickersUtilsProvider,
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-import ThumbnailImageCrop from '../image_components/thumbnail-image-crop';
 import { capitalizeFirstLetter } from '../../assets/helpers/helper-functions-index';
 
 
@@ -38,7 +34,6 @@ export default function TimeSelectPanel(props) {
     itemsInCart, pickUpTime, setPickUpTimeMethod,
   } = props;
   const classes = useStyles();
-  const [inputError, setInputError] = React.useState(false);
   const [dateHelperText, setDateHelperText] = React.useState(null);
   const [timeHelperText, setTimeHelperText] = React.useState(null);
 

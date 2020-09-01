@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 require('babel-polyfill');
 
@@ -10,9 +9,9 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: '[name].bundle.js',
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -23,11 +22,44 @@ module.exports = {
         },
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.html$/,
         use: [
           {
             loader: 'html-loader',
           },
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/'
+            }
+          }
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
         ],
       },
     ],
@@ -42,8 +74,8 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       inject: false,
-      template: './dist/index.html',
-      filename: './index.html',
+      template: './src/index.html',
+      filename: 'index.html',
     }),
   ],
 };

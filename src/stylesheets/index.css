@@ -1,0 +1,720 @@
+/* line 1, ../../sass/partials/_base.scss */
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 5, ../../sass/partials/_base.scss */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+@media screen and (max-width: 400px) {
+  /* line 5, ../../sass/partials/_base.scss */
+  body {
+    font-size: 1.2rem;
+  }
+  /* line 15, ../../sass/partials/_base.scss */
+  body h4 {
+    font-size: 2rem;
+  }
+  /* line 18, ../../sass/partials/_base.scss */
+  body h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 24, ../../sass/partials/_base.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 28, ../../sass/partials/_base.scss */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* line 1, ../../sass/partials/_layout.scss */
+.add-to-cart-button {
+  max-height: 35px;
+  margin-left: 10px !important;
+  align-items: center;
+  display: inline-block;
+}
+@media screen and (max-width: 991px) {
+  /* line 1, ../../sass/partials/_layout.scss */
+  .add-to-cart-button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1rem !important;
+    margin-left: 0 !important;
+    display: block;
+  }
+}
+
+/* line 15, ../../sass/partials/_layout.scss */
+.add-to-cart-group-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  /* line 15, ../../sass/partials/_layout.scss */
+  .add-to-cart-group-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 24, ../../sass/partials/_layout.scss */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 31, ../../sass/partials/_layout.scss */
+.cropped {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* line 37, ../../sass/partials/_layout.scss */
+.platter-list-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* line 42, ../../sass/partials/_layout.scss */
+.contain-cropped {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+/* line 50, ../../sass/partials/_layout.scss */
+.cover-cropped {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/* line 58, ../../sass/partials/_layout.scss */
+.dark-filter {
+  background-color: rgba(2, 27, 35, 0.79);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+/* line 67, ../../sass/partials/_layout.scss */
+.navigation-panel {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* line 78, ../../sass/partials/_layout.scss */
+.ingredience-container {
+  align-content: stretch;
+  flex-wrap: nowrap !important;
+}
+
+/* line 83, ../../sass/partials/_layout.scss */
+.ingredience-item {
+  place-self: center;
+}
+/* line 85, ../../sass/partials/_layout.scss */
+.ingredience-item input {
+  border: none !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 92, ../../sass/partials/_layout.scss */
+.sushi-banner-background {
+  width: 100%;
+  height: 140%;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  opacity: 0.4;
+  z-index: -100;
+}
+
+/* line 104, ../../sass/partials/_layout.scss */
+.sushi-banner-container {
+  width: 100%;
+  height: 80vh;
+  background: #355C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  color: #fff;
+}
+/* line 113, ../../sass/partials/_layout.scss */
+.sushi-banner-container h2 {
+  color: #fff;
+  opacity: 0.8;
+}
+/* line 116, ../../sass/partials/_layout.scss */
+.sushi-banner-container h2:hover {
+  opacity: 1;
+}
+
+/* line 122, ../../sass/partials/_layout.scss */
+.sushi-banner-content {
+  width: 70%;
+  margin: 20px auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 130, ../../sass/partials/_layout.scss */
+.sushi-box {
+  width: 270px;
+  position: relative;
+  border-radius: 7px;
+  margin: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.09);
+}
+/* line 137, ../../sass/partials/_layout.scss */
+.sushi-box:hover {
+  transform: scale(1.009);
+}
+
+/* line 142, ../../sass/partials/_layout.scss */
+.sushi-box-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  font-size: 1.25rem;
+  background-color: #141414;
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 36, ../../sass/partials/_mixins.scss */
+.sushi-box-info a {
+  color: #fff;
+}
+/* line 145, ../../sass/partials/_layout.scss */
+.sushi-box-info .sushi-box-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 150, ../../sass/partials/_layout.scss */
+.sushi-box-detailed-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  font-size: 1.25rem;
+  background-color: #141414;
+  color: #fff;
+  opacity: 1;
+}
+/* line 36, ../../sass/partials/_mixins.scss */
+.sushi-box-detailed-info a {
+  color: #fff;
+}
+
+/* line 155, ../../sass/partials/_layout.scss */
+.sushi-box-title {
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* line 160, ../../sass/partials/_layout.scss */
+.sushi-box-delete-icon {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  color: #fff;
+}
+/* line 44, ../../sass/partials/_mixins.scss */
+.sushi-box-delete-icon:hover {
+  transform: scale(1.2);
+}
+
+/* line 168, ../../sass/partials/_layout.scss */
+.sushi-edit-button {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+}
+/* line 44, ../../sass/partials/_mixins.scss */
+.sushi-edit-button:hover {
+  transform: scale(1.2);
+}
+
+/* line 177, ../../sass/partials/_layout.scss */
+.platter-full-info-container {
+  width: 85vw;
+  margin: 20px auto;
+  overflow: hidden;
+}
+/* line 182, ../../sass/partials/_layout.scss */
+.platter-full-info-container input {
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  background: none;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 991px) {
+  /* line 177, ../../sass/partials/_layout.scss */
+  .platter-full-info-container {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 177, ../../sass/partials/_layout.scss */
+  .platter-full-info-container {
+    width: 100%;
+    padding: 2rem;
+    overflow: auto;
+  }
+}
+
+/* line 200, ../../sass/partials/_layout.scss */
+.sushi-info-cirlce-image-container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  font-size: 1.25em;
+  align-items: center;
+  flex-shrink: 0;
+  user-select: none;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 213, ../../sass/partials/_layout.scss */
+.sushi-info-cirlce-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
+/* line 221, ../../sass/partials/_layout.scss */
+.sushi-info-title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* line 226, ../../sass/partials/_layout.scss */
+.sushi-instructions {
+  padding: 35px;
+}
+/* line 228, ../../sass/partials/_layout.scss */
+.sushi-instructions .ingredience-item {
+  background-color: #fff0f09c;
+  margin: 2px;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 235, ../../sass/partials/_layout.scss */
+.sushi-instructions .ingredience-item:hover {
+  overflow: scroll;
+  text-overflow: clip;
+}
+/* line 240, ../../sass/partials/_layout.scss */
+.sushi-instructions .MuiGrid-container {
+  margin-bottom: 3px;
+}
+
+/* line 245, ../../sass/partials/_layout.scss */
+.sushi-info-image {
+  width: 325px;
+}
+
+/* line 249, ../../sass/partials/_layout.scss */
+.sushi-layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vh;
+  justify-content: center;
+}
+
+/* line 256, ../../sass/partials/_layout.scss */
+.sushi-tag {
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+/* line 265, ../../sass/partials/_layout.scss */
+.sushi-thumbnail {
+  max-width: 250px;
+}
+
+/* line 269, ../../sass/partials/_layout.scss */
+.max-width {
+  width: 100%;
+}
+
+/* line 273, ../../sass/partials/_layout.scss */
+.sushi-menu-container {
+  width: 70%;
+  margin: 100px auto;
+}
+
+/* line 279, ../../sass/partials/_layout.scss */
+.tags-container input {
+  border: none;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 285, ../../sass/partials/_layout.scss */
+.tags-container div {
+  margin: 3px;
+}
+
+/* line 290, ../../sass/partials/_layout.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 294, ../../sass/partials/_layout.scss */
+.toggle-fav-icon {
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  color: white;
+  margin: 3px;
+}
+/* line 44, ../../sass/partials/_mixins.scss */
+.toggle-fav-icon:hover {
+  transform: scale(1.2);
+}
+
+/* line 301, ../../sass/partials/_layout.scss */
+.input-number-group {
+  display: flex;
+}
+
+/* line 305, ../../sass/partials/_layout.scss */
+.plus-minus-number-container {
+  display: flex;
+}
+/* line 307, ../../sass/partials/_layout.scss */
+.plus-minus-number-container input {
+  width: 100px;
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid #a9a9a9;
+  background: none;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+}
+/* line 317, ../../sass/partials/_layout.scss */
+.plus-minus-number-container .unit-input {
+  width: 50px !important;
+  border-left: 0;
+}
+/* line 321, ../../sass/partials/_layout.scss */
+.plus-minus-number-container .left-button {
+  border: 1px solid #a9a9a9;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+/* line 326, ../../sass/partials/_layout.scss */
+.plus-minus-number-container .right-button {
+  border: 1px solid #a9a9a9;
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+}
+@media screen and (max-width: 991px) {
+  /* line 305, ../../sass/partials/_layout.scss */
+  .plus-minus-number-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 334, ../../sass/partials/_layout.scss */
+  .plus-minus-number-container input {
+    font-size: 2rem;
+    width: 100%;
+  }
+  /* line 338, ../../sass/partials/_layout.scss */
+  .plus-minus-number-container .left-button, .plus-minus-number-container .right-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* line 342, ../../sass/partials/_layout.scss */
+  .plus-minus-number-container .unit-input {
+    width: 0 !important;
+    padding: 0;
+    border: none;
+  }
+}
+
+/* line 350, ../../sass/partials/_layout.scss */
+.platter-card {
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  /* line 350, ../../sass/partials/_layout.scss */
+  .platter-card {
+    width: 100%;
+  }
+}
+
+/* line 359, ../../sass/partials/_layout.scss */
+.platter-info {
+  min-width: 300px;
+}
+@media screen and (max-width: 400px) {
+  /* line 359, ../../sass/partials/_layout.scss */
+  .platter-info {
+    width: 100%;
+  }
+}
+
+/* line 366, ../../sass/partials/_layout.scss */
+.sushiBorderTableTitle {
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 991px) {
+  /* line 366, ../../sass/partials/_layout.scss */
+  .sushiBorderTableTitle {
+    display: none;
+  }
+}
+
+/* line 374, ../../sass/partials/_layout.scss */
+.container {
+  max-width: none;
+}
+
+/* line 378, ../../sass/partials/_layout.scss */
+.cart-receipt-card {
+  width: 80%;
+  margin: 0 auto;
+  position: sticky;
+  float: none;
+  top: 10%;
+}
+@media screen and (max-width: 1380px) {
+  /* line 378, ../../sass/partials/_layout.scss */
+  .cart-receipt-card {
+    float: right;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* line 378, ../../sass/partials/_layout.scss */
+  .cart-receipt-card {
+    width: 100%;
+    position: inherit;
+    top: 0;
+  }
+}
+
+/* line 395, ../../sass/partials/_layout.scss */
+.remove-icon-container {
+  cursor: pointer;
+  padding: 0 20px;
+  z-index: 10;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  /* line 395, ../../sass/partials/_layout.scss */
+  .remove-icon-container {
+    width: 100%;
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px 0;
+  }
+}
+
+/* line 409, ../../sass/partials/_layout.scss */
+.receipt-header {
+  color: #fff;
+  background: #337ab7;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* line 420, ../../sass/partials/_layout.scss */
+.user-email-phone-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+  /* line 420, ../../sass/partials/_layout.scss */
+  .user-email-phone-input-container {
+    display: block;
+  }
+  /* line 425, ../../sass/partials/_layout.scss */
+  .user-email-phone-input-container div {
+    width: 100%;
+  }
+}
+
+/* line 431, ../../sass/partials/_layout.scss */
+.order-receipt-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+/* line 435, ../../sass/partials/_layout.scss */
+.order-receipt-button-container button {
+  width: 30%;
+  margin: 5px;
+  padding: 10px 0;
+}
+/* line 440, ../../sass/partials/_layout.scss */
+.order-receipt-button-container div {
+  width: 30%;
+  margin: 5px;
+}
+/* line 444, ../../sass/partials/_layout.scss */
+.order-receipt-button-container .order-receipt-modal-button {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+@media screen and (max-width: 991px) {
+  /* line 431, ../../sass/partials/_layout.scss */
+  .order-receipt-button-container {
+    display: block;
+    padding: 0 10px 0 10px;
+  }
+  /* line 452, ../../sass/partials/_layout.scss */
+  .order-receipt-button-container button {
+    width: 100%;
+    padding: 10px 0 10px;
+    margin: 0 auto;
+  }
+  /* line 457, ../../sass/partials/_layout.scss */
+  .order-receipt-button-container div {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+/* line 464, ../../sass/partials/_layout.scss */
+.order-sender-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c3c3c3;
+  overflow: auto;
+}
+@media screen and (max-width: 991px) {
+  /* line 464, ../../sass/partials/_layout.scss */
+  .order-sender-info-container {
+    display: block;
+  }
+}
+
+/* line 476, ../../sass/partials/_layout.scss */
+.receipt-card-borders-and-shadow {
+  display: inline-block;
+  background-color: #fff;
+  color: inherit;
+  width: 100%;
+  border: 1px solid #337ab7;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.09);
+  margin-bottom: 15px;
+}
+
+/* line 487, ../../sass/partials/_layout.scss */
+.completed-order-color-theme {
+  border-color: #4e8640;
+}
+/* line 489, ../../sass/partials/_layout.scss */
+.completed-order-color-theme header {
+  background-color: #4e8640;
+  color: #fff;
+}
+
+/* line 495, ../../sass/partials/_layout.scss */
+.passed-order-color-theme {
+  border-color: #848484;
+}
+/* line 497, ../../sass/partials/_layout.scss */
+.passed-order-color-theme header {
+  background-color: #848484;
+  color: #fff;
+}
+
+/* line 503, ../../sass/partials/_layout.scss */
+.canceled-order-color-theme {
+  border-color: #dc3545;
+}
+/* line 505, ../../sass/partials/_layout.scss */
+.canceled-order-color-theme header {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* line 511, ../../sass/partials/_layout.scss */
+.login-input-field {
+  width: 500px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 400px) {
+  /* line 511, ../../sass/partials/_layout.scss */
+  .login-input-field {
+    width: 90%;
+  }
+}
