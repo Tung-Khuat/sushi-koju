@@ -14,7 +14,6 @@ const initialState = {
   sushiBox: [],
   sushiPresetList: [],
   currentPresetInfo: null,
-  favourites: [],
   itemsInCart: sessionStorageCart || [],
   pickUpTime: sessionStoragePickUpTime ? new Date(sessionStoragePickUpTime) : defaultPickupTime,
   orderList: null,

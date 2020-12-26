@@ -24,9 +24,9 @@ export default function CartButton({children, bgColor, borderColor, fontColor, o
     const [badgeNumber, setBadgeNumber] = useState(null)
     
     useEffect(() => {
-      console.log(itemsInCart.length)
-      setBadgeNumber(itemsInCart.length) 
-      console.log(badgeNumber)
+      if(itemsInCart)
+        setBadgeNumber(itemsInCart.length) 
+
     }, [itemsInCart])
 
     return (
